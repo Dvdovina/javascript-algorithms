@@ -8,7 +8,10 @@
 
 function capitalize(str) {
     // Напишите код здесь
-}
+    return str.replace(/(^|\s)\S/g, function(c) {
+        return c.toUpperCase()
+    });
+};
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
